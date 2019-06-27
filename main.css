@@ -1,0 +1,7 @@
+.logistics {
+	height: 60vh;
+	background-color: red;
+}
+
+@media screen and (max-width: 767px) {
+}
