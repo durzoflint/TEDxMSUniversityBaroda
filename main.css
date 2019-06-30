@@ -3,7 +3,7 @@
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/logistics_bg.PNG);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 15%;
+	padding-top: 10%;
 	color: white;
 }
 
@@ -57,6 +57,19 @@ a:hover {
 	padding-bottom: 30px;
 }
 
+.about > .row > .row {
+	padding: 0;
+	margin: 0;
+}
+
+.about-ted {
+	padding-left: 0;
+}
+
+.about-tedx {
+	padding-right: 0;
+}
+
 .red-text {
 	color: red;
 }
@@ -78,5 +91,27 @@ a:hover {
 	.speaker-image {
 		max-height: 80px;
 		margin-bottom: 0;
+	}
+
+	.about-ted {
+		padding-left: 15px;
+	}
+
+	.about-tedx {
+		padding-right: 15px;
+	}
+
+	.about-ted-text {
+		padding-left: 15px;
+	}
+
+	.about-tedx-text {
+		padding-right: 15px;
+		margin-top: 20px;
+	}
+
+	.about-image {
+		width: 100%;
+		height: auto;
 	}
 }
