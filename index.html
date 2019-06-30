@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>TEDx MS University Baroda</title>
-	<link rel="icon" href="./res/img/logo small.png">
+	<!-- <link rel="icon" href="./res/img/logo small.png"> -->
 
 	<meta charset="utf-8">
 	<meta name="keywords" content="TEDx" />
@@ -11,9 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -52,7 +52,27 @@
 	</nav>
 
 	<div class="logistics">
-		
+		<div class="container">
+			<h1>TEDx MS University Baroda</h1>
+			<h3>Date: 1st September</h3>
+			<h3>Venue: Someplace in Baroda, India</h3>
+			<br>
+			<p class="lead" id="countdown"></p>
+		</div>
+	</div>
+
+	<div class="container mailing-list text-center">
+		<h1>Join our mailing list to get updates</h1>
+		<br>
+		<form class="form-inline" action="">
+			<div class="form-group">
+				<input type="email" class="form-control" required placeholder="Enter email" name="email">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" required placeholder="Enter password" name="password">
+			</div>
+			<button type="submit" class="btn btn-danger">Submit</button>
+		</form>
 	</div>
 
 	<script type="text/javascript" src="main.js"></script>
