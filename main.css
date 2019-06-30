@@ -7,6 +7,10 @@
 	color: white;
 }
 
+.white-text {
+	color: white !important;
+}
+
 #countdown {
 	color: red;
 }
