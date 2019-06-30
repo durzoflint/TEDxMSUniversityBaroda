@@ -1,3 +1,7 @@
+:root {
+	--material-red: #f44336;
+}
+
 .logistics {
 	height: 85vh;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/logistics_bg.PNG);
@@ -12,7 +16,7 @@
 }
 
 #countdown {
-	color: red;
+	color: var(--material-red);
 }
 
 .mailing-list {
@@ -26,11 +30,11 @@
 }
 
 a {
-	color: red;
+	color: var(--material-red);
 }
 
 a:visited, a:active, a:focus {
-	color: red;
+	color: var(--material-red);
 }
 
 a:hover {
@@ -42,6 +46,10 @@ a:hover {
 	background-color: black;
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.slider-wrapper {
+	padding: 0;
 }
 
 .speaker-image {
@@ -71,7 +79,7 @@ a:hover {
 }
 
 .red-text {
-	color: red;
+	color: var(--material-red);
 }
 
 .about-ted-text {
@@ -94,6 +102,17 @@ a:hover {
 	height: auto;
 	width: 100%;
 	max-height: 200px;
+}
+
+.testimonials {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: var(--material-red);
+	color: white;
+}
+
+.testimonial-wrapper {
+	padding: 15px;
 }
 
 @media screen and (max-width: 767px) {
