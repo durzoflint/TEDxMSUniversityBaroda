@@ -1,6 +1,6 @@
 :root {
 	--material-red: #f44336;
-	--material-dark: #333;
+	--material-dark: #212121;
 }
 
 .logistics {
@@ -130,21 +130,36 @@ a:hover {
 }
 
 .footer {
+	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: var(--material-dark);
 }
 
 .footer-link {
-	color: white !important;
+	color: var(--material-red) !important;
 }
 
 .footer-link:visited, .footer-link:active, .footer-link:focus {
-	color: white !important;
+	color: var(--material-red) !important;
 }
 
 .footer-link:hover {
-	color: var(--material-red) !important;
+}
+
+.footer-image {
+	max-width: 100%;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.footer-col-1 {
+	padding-left: 40px;
+}
+
+.footer-link-wrapper {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) {
