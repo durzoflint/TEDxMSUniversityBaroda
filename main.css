@@ -5,7 +5,7 @@
 
 .logistics {
 	height: 85vh;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/logistics_bg.PNG);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/logistics_bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 10%;
