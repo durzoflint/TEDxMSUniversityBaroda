@@ -204,7 +204,15 @@ a:hover {
 		margin-bottom: 0;
 	}
 
-	.footer-link {
-		text-align: left !important;
+	.footer-col-1 {
+		padding-left: inherit;
+	}
+
+	.footer {
+		text-align: center !important;
+	}
+
+	.footer-link-wrapper {
+		margin-bottom: 0;
 	}
 }
