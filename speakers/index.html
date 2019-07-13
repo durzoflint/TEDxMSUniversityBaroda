@@ -60,75 +60,107 @@
 
 		<div class="row">
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker One</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Two</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Three</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker4.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Four</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker5.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Five</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Six</p>
 					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-3">
-				<div class="text-center speaker-card">
-					<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
-					<div class="speaker-name">
-						<p class="lead name">Speaker Seven</p>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
+					<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
+					<div class="speaker-name">
+						<p class="lead name">Speaker Seven</p>
+					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Eight</p>
+					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
 					</div>
 				</div>
 			</div>
@@ -136,22 +168,45 @@
 
 		<div class="row">
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker4.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Nine</p>
+					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
-				<div class="text-center speaker-card">
+				<div class="text-center speaker-card" onclick="openModal(this);">
 					<img class="image-responsive speaker-image" src="../img/speaker5.JPG">
 					<div class="speaker-name">
 						<p class="lead name">Speaker Ten</p>
 					</div>
+					<div class="data">
+						<p class="short-description">Description chota walla (Can be designation or topic on which they'll speak)</p>
+						<p class="description">Description bada walla</p>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div id="modal" class="modal">
+		<div class="container modal-content">
+			<span id="close" class="close" onclick="closeModal();">&times;</span>
+			<div class="container-fluid modal-header">
+				<img class="col-xs-3 img-circle modal-image" src="https://via.placeholder.com/512x512.png?text=Sqaure Image">
+				<p class="col-xs-9 name"><span class="name-inline">Name of the Speaker</span><br><span class="short-description">Short Description</span></p>
+			</div>
+			<div class="modal-body">
+				<p class="lead description">Description</p>
+			</div>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="main.js"></script>
 </body>
