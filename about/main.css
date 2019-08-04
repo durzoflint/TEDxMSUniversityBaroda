@@ -3,6 +3,103 @@
 	--material-dark: #212121;
 }
 
+body {
+	font-family: 'Montserrat';
+}
+
+.navbar {
+  background: var(--material-dark);
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar-brand {
+  margin-top: -20px;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar-collapse {
+  border: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: 'Oswald';
+  padding: 15px;
+  color: white !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: var(--material-red);
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+
+nav.shift ul li a:hover {
+  color: var(--material-red);
+}
+
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--material-red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.active > a {
+	background-color: var(--material-red) !important;
+}
+
+.navbar-toggle {
+  background-color: white;
+  border: 0;
+}
+
 .about {
 	background-color: var(--material-dark);
 	padding-top: 30px;

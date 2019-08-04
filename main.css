@@ -3,13 +3,142 @@
 	--material-dark: #212121;
 }
 
+body {
+	font-family: 'Montserrat';
+}
+
+.navbar {
+  background: var(--material-dark);
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.navbar-brand {
+  margin-top: -20px;
+}
+
+.navbar-brand img {
+  height: 100px;
+}
+
+.navbar-collapse {
+  border: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: 'Oswald';
+  padding: 15px;
+  color: white !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: var(--material-red);
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+
+nav.shift ul li a:hover {
+  color: var(--material-red);
+}
+
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: var(--material-red);
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+.active > a {
+	background-color: var(--material-red) !important;
+}
+
+.navbar-toggle {
+  background-color: white;
+  border: 0;
+}
+
 .logistics {
-	height: 85vh;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(img/logistics_bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 10%;
+	position: absolute;
+	z-index: 1;
 	color: white;
+	top: 35vh;
+	left: 25vw;
+}
+
+.carousel-one {
+  margin: 0px 0px 0px 0px !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/logistics_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+.carousel-two {
+  margin : 0px 0px 0px 0px !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/logistics_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+.carousel-three {
+  margin : 0px 0px 0px 0px !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/logistics_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: fixed;*/
 }
 
 .white-text {
@@ -18,6 +147,8 @@
 
 #countdown {
 	color: var(--material-red);
+	font-weight: bold;
+	font-size: 32px;
 }
 
 .mailing-list {
@@ -45,7 +176,7 @@ a:hover {
 .speakers {
 	color: white;
 	background-color: black;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 }
 
@@ -61,8 +192,12 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+.speaker-text {
+	margin-bottom: 5px;
+}
+
 .about {
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 }
 
@@ -92,7 +227,7 @@ a:hover {
 }
 
 .past-events {
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 	background-color: black;
 	color: white;
@@ -106,7 +241,7 @@ a:hover {
 }
 
 .testimonials {
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 	background-color: var(--material-red);
 	color: white;
@@ -117,7 +252,7 @@ a:hover {
 }
 
 .team {
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 }
 
@@ -164,12 +299,16 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 	.logistics {
-		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(img/logistics_bg.PNG);
-		padding-top: 25%;
+		top: 20vh;
+		left: 10vw;
 	}
 
 	.speaker-image {
 		max-height: 80px;
+		margin-bottom: 0;
+	}
+
+	.speaker-text {
 		margin-bottom: 0;
 	}
 

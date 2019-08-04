@@ -1,3 +1,7 @@
+function redirectToSpeakerPage() {
+	window.location.href = "./speakers";
+}
+
 //To display the countdown timer
 var countDownDate = new Date("Sep 1, 2019 15:37:25").getTime();
 var x = setInterval(function() {
@@ -9,7 +13,7 @@ var x = setInterval(function() {
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-	document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs " + minutes + " Mins " + seconds + " seconds left";
+	document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hrs " + minutes + " Mins " + seconds + " Seconds left";
 
 	if (distance < 0) {
 		clearInterval(x);
@@ -32,11 +36,11 @@ $(document).ready(function() {
 		easing: 'linear', //'for jquery animation',////
 
 		speed: 400, //ms'
-		auto: false,
+		auto: true,
 		pauseOnHover: false,
-		loop: false,
+		loop: true,
 		slideEndAnimation: true,
-		pause: 2000,
+		pause: 3000,
 
 		keyPress: false,
 		controls: true,

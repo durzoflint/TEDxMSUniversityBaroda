@@ -15,16 +15,21 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<!-- Slider -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav class="shift navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,22 +37,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="./">TEDx The MS University Baroda</a>
+				<a class="navbar-brand" href="./">
+					<img src="img/about.png">
+				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="./speakers">Speakers</a></li>
 					<li><a href="./about/">About</a></li>
 					<li><a href="./event/">Event</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown">Previous Events
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="./previous-events/2018/">TEDx 2018</a></li>
-							<li><a href="./previous-events/2017/">TEDx 2017</a></li>
-						</ul>
-					</li>
+					<li><a href="./previous-events/2018/">Previous Events</a></li>
 					<li><a href="./partners">Partners</a></li>
 					<li><a href="./contact-us">Contact Us</a></li>
 				</ul>
@@ -57,18 +56,55 @@
 
 	<div class="logistics">
 		<div class="container">
-			<h1>TEDx The MS University Baroda</h1>
+			<h1><span class="red-text">TEDx</span> TheMSUniversity Baroda</h1>
 			<h3>Date: 1st September, 2019</h3>
 			<h3>Time: 10:00 am IST</h3>
 			<h3>Venue: MS University, Baroda, India</h3>
 			<a href="" class="btn btn-danger white-text">Details</a>
 			<a href="" class="btn btn-danger white-text">Register Now</a>
-			<br><br>
-			<p class="lead" id="countdown"></p>
+			
 		</div>
 	</div>
 
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="item active carousel-one">
+				<div class="carousel-caption">
+					<h1></h1>
+				</div>
+			</div>
+
+			<div class="item carousel-two">
+				<div class="carousel-caption">
+					<h2></h2>
+				</div>
+			</div>
+
+			<div class="item carousel-three">
+				<div class="carousel-caption">
+					<h2></h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a> -->
+	</div>
+
 	<div class="container mailing-list text-center">
+		<p class="lead" id="countdown">Countdown</p>
 		<h1>Join our mailing list to get updates</h1>
 		<br>
 		<form class="form-inline" action="">
@@ -85,57 +121,63 @@
 	</div>
 
 	<div class="speakers">
-		<div class="container">
-			<h1 class="page-header">Speakers</h1>
+		<div class="container text-center">
+			<h1>SPEAKERS</h1>
 		</div>
 		<br><br>
 		<div class="container-fluid slider-wrapper">
-			<ul id="light-slider-speakers">
+			<ul onclick="redirectToSpeakerPage();" id="light-slider-speakers">
 				<li>
 					<img class="speaker-image" src="img/speaker1.JPG">
-					<p class="lead text-center">Speaker 1</p>
+					<p class="lead text-center speaker-text">Speaker 1</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker2.JPG">
-					<p class="lead text-center">Speaker 2</p>
+					<p class="lead text-center speaker-text">Speaker 2</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker3.JPG">
-					<p class="lead text-center">Speaker 3</p>
+					<p class="lead text-center speaker-text">Speaker 3</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker4.JPG">
-					<p class="lead text-center">Speaker 4</p>
+					<p class="lead text-center speaker-text">Speaker 4</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker5.JPG">
-					<p class="lead text-center">Speaker 5</p>
+					<p class="lead text-center speaker-text">Speaker 5</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker1.JPG">
-					<p class="lead text-center">Speaker 6</p>
+					<p class="lead text-center speaker-text">Speaker 6</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker2.JPG">
-					<p class="lead text-center">Speaker 7</p>
+					<p class="lead text-center speaker-text">Speaker 7</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker3.JPG">
-					<p class="lead text-center">Speaker 8</p>
+					<p class="lead text-center speaker-text">Speaker 8</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker4.JPG">
-					<p class="lead text-center">Speaker 9</p>
+					<p class="lead text-center speaker-text">Speaker 9</p>
+					<p class="text-center">Subtext</p>
 				</li>
 				<li>
 					<img class="speaker-image" src="img/speaker5.JPG">
-					<p class="lead text-center">Speaker 10</p>
+					<p class="lead text-center speaker-text">Speaker 10</p>
+					<p class="text-center">Subtext</p>
 				</li>
 			</ul>
-		</div>
-		<br>
-		<div class="text-center">
-			<a href="" class="btn btn-danger white-text">Read More</a>
 		</div>
 	</div>
 
@@ -154,14 +196,11 @@
 			<img src="img/about.png" class="col-sm-6 about-image">
 			<p class="col-sm-6 lead about-tedx-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus laoreet augue vitae orci pellentesque, sit amet tincidunt purus sagittis. Proin nec enim id odio posuere tempus malesuada sit amet nisi. Phasellus a facilisis quam, ut congue mi. Vestibulum at molestie sem. Duis sodales accumsan felis, at suscipit ex. Vestibulum tincidunt non arcu vel volutpat. Nulla ornare euismod porta. Phasellus bibendum auctor feugiat. Vivamus ultrices eleifend nibh et tincidunt. Mauris sagittis quis ante quis aliquet. Cras libero nisi, luctus et malesuada eu, auctor accumsan enim. Sed venenatis pellentesque elit sit amet hendrerit. Vivamus nisl turpis, fermentum ac velit sed, mollis congue orci. Etiam egestas vel turpis et semper. Donec a augue sed mi blandit lacinia eu at metus. Ut metus ante, pretium non lectus vel, molestie accumsan metus.</p>
 		</div>
-		<div class="text-center">
-			<a href="" class="btn btn-danger white-text">Read More</a>
-		</div>
 	</div>
 
 	<div class="past-events">
-		<div class="container">
-			<h1 class="page-header">Past Events</h1>
+		<div class="container text-center">
+			<h1>PAST EVENTS</h1>
 		</div>
 		<br><br>
 		<div class="container-fluid slider-wrapper">
@@ -198,15 +237,11 @@
 				</li>
 			</ul>
 		</div>
-		<br><br>
-		<div class="text-center">
-			<a href="" class="btn btn-danger white-text">View More</a>
-		</div>
 	</div>
 
 	<div class="testimonials">
-		<div class="container">
-			<h1 class="page-header">Testimonials</h1>
+		<div class="container text-center">
+			<h1>TESTIMONIALS</h1>
 		</div>
 		<br><br>
 		<div class="container-fluid slider-wrapper">
@@ -276,8 +311,8 @@
 	</div>
 
 	<div class="team">
-		<div class="container">
-			<h1 class="page-header">Team</h1>
+		<div class="container text-center">
+			<h1>TEAM</h1>
 		</div>
 		<br><br>
 		<div class="container-fluid slider-wrapper">
