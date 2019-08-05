@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEDx The MS University Baroda</title>
+	<!-- <link rel="icon" href="./res/img/logo small.png"> -->
+
+	<meta charset="utf-8">
+	<meta name="keywords" content="TEDx" />
+	<meta name="description" content="TEDx The MS University Baroda">
+	<meta name="author" content="Abhinav (durzoflint) Upadhyay">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<nav class="shift navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./">
+					<img src="../img/about.png">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../speakers">Speakers</a></li>
+					<li><a href="../about/">About</a></li>
+					<li><a href="../event/">Event</a></li>
+					<li class="active"><a href="">Previous Events</a></li>
+					<li><a href="../partners">Partners</a></li>
+					<li><a href="../contact-us">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid content">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#2018" class="two-zero-one-eight"><span class="red-text">TEDx</span> 2018</a></li>
+			<li><a data-toggle="tab" href="#2017" class="two-zero-one-eight"><span class="red-text">TEDx</span> 2017</a></li>
+		</ul>
+	</div>
+	<div class="tab-content">
+		<div id="2018" class="tab-pane fade in active">
+			<div class="speakers">
+				<div class="container">
+					<h1 class="page-header">Speakers</h1>
+					
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker One</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Two</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Three</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker4.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Four</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker5.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Five</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Six</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Seven</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Eight</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container gallery">
+				<h1 class="page-header">Gallery</h1>
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/about.png">
+					</div>
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/logistics_bg.png">
+					</div>
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/logistics_bg.png">
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		<div id="2017" class="tab-pane fade">
+			<div class="speakers">
+				<div class="speakers">
+				<div class="container">
+					<h1 class="page-header">Speakers</h1>
+					
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker One</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Two</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Three</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker4.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Four</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker5.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Five</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker1.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Six</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker2.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Seven</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="text-center speaker-card" onclick="openModal(this);">
+								<img class="image-responsive speaker-image" src="../img/speaker3.JPG">
+								<div class="speaker-name">
+									<p class="lead name">Speaker Eight</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container gallery">
+				<h1 class="page-header">Gallery</h1>
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/about.png">
+					</div>
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/logistics_bg.png">
+					</div>
+					<div class="col-sm-4">
+						<img class="gallery-image" src="../img/logistics_bg.png">
+					</div>
+			
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="col-sm-3">
+				<img src="../img/about.png" class="footer-image">
+			</div>
+			<div class="col-sm-3 footer-col-1">
+				<p class="footer-link-wrapper"><a href="" class="footer-link">MSU Website</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Registration Form</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Speaker Nomination Form</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Volunteering Form</a></p>
+			</div>
+			<div class="col-sm-3">
+				<p class="footer-link-wrapper"><a href="" class="footer-link">TED Website</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Get our App</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Attendee Rules and Regulations</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Terms and Conditions</a></p>
+			</div>
+			<div class="col-sm-3">
+				<p class="footer-link-wrapper"><a href="" class="footer-link">TEDx Website</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">FAQ's</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Privay Policy</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Contact Us</a></p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
