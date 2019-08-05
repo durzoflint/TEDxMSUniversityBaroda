@@ -154,6 +154,9 @@ nav.shift ul li a:hover:after {
 .mailing-list {
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+	background-color: black;
+	color: white;
 }
 
 .form-group {
@@ -199,6 +202,9 @@ a:hover {
 .about {
 	padding-top: 10px;
 	padding-bottom: 30px;
+
+	background-color: black;
+	color: white;
 }
 
 .about > .row > .row {
@@ -254,6 +260,9 @@ a:hover {
 .team {
 	padding-top: 10px;
 	padding-bottom: 30px;
+
+	background-color: black;
+	color: white;
 }
 
 .team-image {
