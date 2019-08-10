@@ -1,14 +1,18 @@
 :root {
-	--material-red: #f44336;
+	--material-red: #E62B1E;
 	--material-dark: #212121;
 }
 
 body {
-	font-family: 'Montserrat';
+	font-family: 'Helvetica';
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/logistics_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .navbar {
-  background: var(--material-dark);
+  background: var(--material-red);
   border: 0;
   margin-bottom: 0;
   border-radius: 0;
@@ -55,7 +59,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-  color: var(--material-red);
+  color: var(--material-dark);
 }
 
 nav.shift ul li a {
@@ -64,7 +68,7 @@ nav.shift ul li a {
 }
 
 nav.shift ul li a:hover {
-  color: var(--material-red);
+  color: var(--material-dark);
 }
 
 nav.shift ul li a:after {
@@ -79,7 +83,7 @@ nav.shift ul li a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: var(--material-red);
+  background: var(--material-dark);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -92,7 +96,7 @@ nav.shift ul li a:hover:after {
 }
 
 .active > a {
-	background-color: var(--material-red) !important;
+	background-color: var(--material-dark) !important;
 }
 
 .navbar-toggle {
@@ -104,8 +108,8 @@ nav.shift ul li a:hover:after {
 	position: absolute;
 	z-index: 1;
 	color: white;
-	top: 35vh;
-	left: 25vw;
+	top: 55vh;
+	left: 5vw;
 }
 
 .carousel-one {
@@ -178,7 +182,7 @@ a:hover {
 
 .speakers {
 	color: white;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.7);
 	padding-top: 10px;
 	padding-bottom: 30px;
 }
@@ -203,7 +207,7 @@ a:hover {
 	padding-top: 10px;
 	padding-bottom: 30px;
 
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 }
 
@@ -235,7 +239,7 @@ a:hover {
 .past-events {
 	padding-top: 10px;
 	padding-bottom: 30px;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.7);
 	color: white;
 }
 

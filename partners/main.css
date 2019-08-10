@@ -1,14 +1,14 @@
 :root {
-	--material-red: #f44336;
+	--material-red: #E62B1E;
 	--material-dark: #212121;
 }
 
 body {
-	font-family: 'Montserrat';
+	font-family: 'Helvetica';
 }
 
 .navbar {
-  background: var(--material-dark);
+  background: var(--material-red);
   border: 0;
   margin-bottom: 0;
   border-radius: 0;
@@ -55,7 +55,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-  color: var(--material-red);
+  color: var(--material-dark);
 }
 
 nav.shift ul li a {
@@ -64,7 +64,7 @@ nav.shift ul li a {
 }
 
 nav.shift ul li a:hover {
-  color: var(--material-red);
+  color: var(--material-dark);
 }
 
 nav.shift ul li a:after {
@@ -79,7 +79,7 @@ nav.shift ul li a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: var(--material-red);
+  background: var(--material-dark);
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -92,7 +92,7 @@ nav.shift ul li a:hover:after {
 }
 
 .active > a {
-	background-color: var(--material-red) !important;
+	background-color: var(--material-dark) !important;
 }
 
 .navbar-toggle {
@@ -101,7 +101,7 @@ nav.shift ul li a:hover:after {
 }
 
 .content {
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .partner-header {
