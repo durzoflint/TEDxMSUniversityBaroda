@@ -5,6 +5,10 @@
 
 body {
 	font-family: 'Helvetica';
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/about_theme_bg_on_ABOUT_page.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .navbar {
@@ -101,7 +105,6 @@ nav.shift ul li a:hover:after {
 }
 
 .about {
-	background-color: var(--material-dark);
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -130,16 +133,15 @@ nav.shift ul li a:hover:after {
 .theme {
 	padding: 30px;
 	color: white;
-	background-image: url(../img/logistics_bg.png);
+	/*background-image: url(../img/about_theme_bg_on_ABOUT_page.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-	filter: grayscale(100%);
+	background-size: cover;*/
+	/*-webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 
+	filter: grayscale(100%);*/
 }
 
 .mentors {
 	color: white;
-	background-color: black;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -157,6 +159,7 @@ nav.shift ul li a:hover:after {
 }
 
 .team {
+	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -170,7 +173,6 @@ nav.shift ul li a:hover:after {
 
 .volunteers {
 	color: white;
-	background-color: black;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -183,6 +185,7 @@ nav.shift ul li a:hover:after {
 }
 
 .partners {
+	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }

@@ -1,0 +1,17 @@
+:root {
+	--material-red: #E62B1E;
+	--material-dark: #212121;
+}
+
+.content {
+	background-color: black;
+	color: white;
+}
+
+.jumbotron {
+	color: var(--material-red);
+}
+
+.page-header {
+	color: var(--material-red);
+}

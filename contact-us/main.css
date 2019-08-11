@@ -101,6 +101,8 @@ nav.shift ul li a:hover:after {
 }
 
 .content {
+  background-color: black;
+  color: white;
 	padding-top: 50px;
 	padding-bottom: 30px;
 }
@@ -113,6 +115,10 @@ nav.shift ul li a:hover:after {
 
 .red-text {
 	color: var(--material-red);
+}
+
+.jumbotron {
+  color: black;
 }
 
 .social-media {

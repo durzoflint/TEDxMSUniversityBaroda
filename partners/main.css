@@ -101,6 +101,8 @@ nav.shift ul li a:hover:after {
 }
 
 .content {
+	background-color: black;
+	color: white;
 	padding-top: 50px;
 }
 

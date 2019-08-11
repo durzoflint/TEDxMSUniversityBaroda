@@ -45,11 +45,11 @@ $(document).ready(function() {
 		easing: 'linear', //'for jquery animation',////
 
 		speed: 400, //ms'
-		auto: false,
+		auto: true,
 		pauseOnHover: false,
 		loop: false,
 		slideEndAnimation: true,
-		pause: 2000,
+		pause: 3000,
 
 		keyPress: false,
 		controls: true,

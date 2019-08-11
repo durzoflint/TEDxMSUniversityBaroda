@@ -106,6 +106,13 @@ nav.shift ul li a:hover:after {
 
 .content {
 	padding-top: 120px;
+	background-color: black;
+	color: white;
+}
+
+.tab-content {
+	background-color: black;
+	color: white;
 }
 
 .active > .two-zero-one-eight, .active > .two-zero-one-seven {
