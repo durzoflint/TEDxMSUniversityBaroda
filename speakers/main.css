@@ -5,6 +5,10 @@
 
 body {
 	font-family: 'Helvetica';
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/Speakers.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .navbar {
@@ -24,6 +28,8 @@ body {
 
 .navbar-brand img {
   height: 100px;
+  background-color: black;
+  padding: 10px;
 }
 
 .navbar-collapse {
@@ -101,7 +107,6 @@ nav.shift ul li a:hover:after {
 }
 
 .content {
-	background-color: black;
 	color: white;
 	padding-top: 50px;
 }
@@ -227,7 +232,6 @@ nav.shift ul li a:hover:after {
 .nominate-speaker {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: black;
 	color: white;
 }
 
@@ -236,7 +240,6 @@ nav.shift ul li a:hover:after {
 }
 
 .partners {
-	background-color: black;
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -277,8 +280,8 @@ nav.shift ul li a:hover:after {
 }
 
 .footer-link-wrapper {
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 @media screen and (max-width: 767px) {

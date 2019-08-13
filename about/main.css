@@ -28,6 +28,8 @@ body {
 
 .navbar-brand img {
   height: 100px;
+  background-color: black;
+  padding: 10px;
 }
 
 .navbar-collapse {
@@ -225,8 +227,8 @@ nav.shift ul li a:hover:after {
 }
 
 .footer-link-wrapper {
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 @media screen and (max-width: 767px) {

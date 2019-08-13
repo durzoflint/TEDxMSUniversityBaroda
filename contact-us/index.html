@@ -56,27 +56,46 @@
 
 	<div class="container-fluid content">
 		<div class="container">
-			<h1 class="contact-header">Contant <span class="red-text">Us</span></h1>
-			<p class="lead"><strong>Email : </strong><span class="red-text">username@host.com</span></p>
-			<p class="lead"><strong>Phone : </strong><span class="red-text">+91 1234567890</span></p>
+			<h1 class="contact-header">CONTACT <span class="red-text">US</span></h1>
+			<p class="lead"><strong>Email : </strong><span class="red-text">tedxthemsuniversitybaroda@gmail.com</span></p>
+			<p class="lead"><strong>Phone : </strong><span class="red-text">+91 9340052731</span>(Atharv Joshi), <span class="red-text">+91 9409491370</span>(Punya Muralidhar)</p>
 			<br>
 			<h2 class="jumbotron text-center">Follow us on our <span class="red-text">Social Media</span> channels</h2>
 			<div class="row text-center">
 				<div class="col-sm-3">
-					<img width="80" height="80" src="../img/about.png" class="img-circle social-media">
+					<img width="80" height="80" src="../img/facebook_logo_Blue_58.png" class="img-circle social-media" onclick="facebookRedirect();">
 				</div>
 				<div class="col-sm-3">
-					<img width="80" height="80" src="../img/about.png" class="img-circle social-media">
+					<img width="80" height="80" src="../img/Instagram_AppIcon.png" class="img-circle social-media" onclick="instagramRedirect();">
 				</div>
 				<div class="col-sm-3">
-					<img width="80" height="80" src="../img/about.png" class="img-circle social-media">
+					<img width="80" height="80" src="../img/Twitter_Logo_WhiteOnBlue.png" class="img-circle social-media" onclick="twitterRedirect();">
 				</div>
 				<div class="col-sm-3">
-					<img width="80" height="80" src="../img/about.png" class="img-circle social-media">
+					<img width="80" height="80" src="../img/youtube_social_circle_white.png" class="img-circle social-media" onclick="youtubeRedirect();">
 				</div>
 			</div>
+			
+			<div class="col-sm-6 form">
+				<h1 class="page-header">GET IN TOUCH</h1>
+				<form action="/mail.php">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" class="form-control" required placeholder="John Doe" id="name" name="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" required placeholder="john.doe@example.com" id="email" name="email">
+					</div>
+					<div class="form-group">
+						<label for="comment">Message:</label>
+						<textarea class="form-control" rows="5" required placeholder="Type your message here..." id="comment" name="message"></textarea>
+					</div>
+					<button type="submit" class="btn btn-danger">Submit</button>
+				</form>
+			</div>
 		</div>
-	</div>	
+	</div>
 
 	<div class="footer">
 		<div class="container-fluid">
@@ -90,8 +109,11 @@
 			<div class="col-sm-3">
 				<p class="footer-link-wrapper"><a href="https://www.msubaroda.ac.in/" class="footer-link">MSU Website</a></p>
 				<p class="footer-link-wrapper"><a href="https://www.ted.com/#/" class="footer-link">TED Website</a></p>
-				<p class="footer-link-wrapper"><a href="../faq" class="footer-link">FAQ's</a></p>
-				<p class="footer-link-wrapper"><a href="../terms-and-conditions" class="footer-link">Terms and Conditions</a></p>
+				<p class="footer-link-wrapper"><a href="./faq" class="footer-link">FAQ's</a></p>
+				<p class="footer-link-wrapper"><a href="./terms-and-conditions" class="footer-link">Attendee rules and regulations</a></p>
+				<p class="footer-link-wrapper"><a href="" class="footer-link">Register Now</a></p>
+				<p class="footer-link-wrapper"><a href="https://docs.google.com/forms/d/e/1FAIpQLSceUTBBySB1gyWEqQ-YJZk-XpQFAd-JzHtAdG2q-ijt-SzWaA/viewform?usp=pp_url" class="footer-link">Volunteer Now</a></p>
+				<p class="footer-link-wrapper"><a href="https://docs.google.com/forms/d/e/1FAIpQLScqoPZkruf0DZ-2zPTaRtfDKHlaxU3_3V2dZYET8-G2lv7kQQ/viewform?usp=sf_link" class="footer-link">Nominate a speaker!</a></p>
 			</div>
 		</div>
 	</div>
