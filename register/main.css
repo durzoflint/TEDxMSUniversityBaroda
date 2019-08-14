@@ -1,0 +1,27 @@
+:root {
+	--material-red: #E62B1E;
+	--material-dark: #212121;
+}
+
+body {
+	font-family: 'Helvetica';
+	background-color: black;
+}
+
+.content {
+	background-color: black;
+	color: white;
+	padding-top: 200px;
+}
+
+.jumbotron {
+	background-color: black;
+	color: var(--material-red);
+}
+
+.page-header {
+	color: var(--material-red);
+}
+
+@media screen and (max-width: 767px) {
+}
