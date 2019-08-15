@@ -338,7 +338,7 @@ a:hover {
 	}
 
 	.speaker-image {
-		max-height: 80px;
+		max-height: 120px;
 		margin-bottom: 0;
 	}
 
@@ -369,7 +369,7 @@ a:hover {
 	}
 
 	.past-event-image {
-		max-height: 50px;
+		max-height: 100px;
 	}
 
 	.team-image {
