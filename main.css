@@ -125,6 +125,18 @@ nav.shift ul li a:hover:after {
   	background-size: cover;
 }
 
+.register-now-button {
+	position: absolute;
+	z-index: 10;
+	color: white;
+	top: 82vh;
+	left: 46vw;
+}
+
+.register-now-button > a {
+	color: white !important;
+}
+
 .carousel-one {
   margin: 0px 0px 0px 0px !important;
   height: 100vh;
