@@ -329,6 +329,11 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+	.register-now-button {
+		top: 55vh;
+		left: 36vw;
+	}
+
 	.carousel-one {
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/mobile-banner-1.jpg);
 	}
